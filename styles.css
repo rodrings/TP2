@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  background-image: url('img/woods.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #26372e;
+}
+
+.linktree-shell {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.linktree-card {
+  width: min(100%, 440px);
+  display: grid;
+  gap: 20px;
+  padding: 32px 24px;
+  border-radius: 28px;
+  background: rgba(250, 250, 244, 0.95);
+  border: 1px solid rgba(105, 126, 93, 0.18);
+  box-shadow: 0 30px 80px rgba(39, 63, 45, 0.12);
+}
+
+.linktree-title {
+  display: block;
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #1e2e24;
+}
+
+.linktree-list {
+  display: grid;
+  gap: 16px;
+}
+
+.linktree-item,
+.linktree-github {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 18px 22px;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.linktree-item {
+  background: #f4f7ef;
+  color: #2a382e;
+  border: 1px solid rgba(105, 126, 93, 0.12);
+}
+
+.linktree-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(30, 48, 34, 0.12);
+  background: #e8f0de;
+}
+
+.linktree-github {
+  background: #2f4c38;
+  color: #f8f2e6;
+}
+
+.linktree-github:hover {
+  transform: translateY(-2px);
+  background: #1f3b2a;
+}
+
+@media (max-width: 520px) {
+  .linktree-card {
+    padding: 28px 18px;
+  }
+
+  .linktree-title {
+    font-size: 1.75rem;
+  }
+
+  .linktree-item,
+  .linktree-github {
+    padding: 16px 18px;
+    font-size: 0.98rem;
+  }
+}
+
+.about-contact .line-full {
+  width: 100%;
+  height: 4px;
+  margin: 16px 0 28px;
+  background: linear-gradient(90deg, #46d6b8 0%, #64bce6 100%);
+  border-radius: 999px;
+}

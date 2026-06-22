@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Turtles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="Inicio">
+    <header>
+        <button class="nav-toggle" onclick="abrirMenu()" aria-label="Abrir menú">☰</button>
+        <img class="logo" src="img/logo.png" alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="acerca.html">Acerca de</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="ayudar.html">Ayudar</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="donar.html">Donar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="banner-nav">
+        <a href="acerca.html">Acerca de <span>→</span></a>
+        <a href="proyectos.html">Proyectos <span>→</span></a>
+        <a href="ayudar.html">Ayudar <span>→</span></a>
+        <a href="donar.html">Donar <span>→</span></a>
+    </div>
+    </div>
+    <div class="contenedor">
+        <section id="proyectos" class="proyectos-section">
+            <h2>Proyectos</h2>
+            <ul class="proyectos-list">
+                <li class="proyecto">
+                    <button class="proyecto-toggle" aria-expanded="false">
+                        <div class="proyecto-header">
+                            <h3>Proyecto: Limpieza de playas</h3>
+                            <span class="arrow">+</span>
+                        </div>
+                        <p class="proyecto-resumen">Movilizamos comunidades para mantener la costa limpia y cuidar la fauna marina.</p>
+                    </button>
+                    <div class="proyecto-content" hidden>
+                        <p>Jornadas periódicas de limpieza en playas cercanas, recolección de residuos y educación ambiental para visitantes.</p>
+                        <a class="proyecto-link" href="limpieza.html">Ver proyecto</a>
+                    </div>
+                </li>
+
+                <li class="proyecto">
+                    <button class="proyecto-toggle" aria-expanded="false">
+                        <div class="proyecto-header">
+                            <h3>Proyecto: Educación ambiental</h3>
+                            <span class="arrow">+</span>
+                        </div>
+                        <p class="proyecto-resumen">Charlas y talleres para escuelas y comunidades, promoviendo prácticas sustentables.</p>
+                    </button>
+                    <div class="proyecto-content" hidden>
+                        <p>Programas educativos con actividades prácticas que fomentan el respeto por el entorno y la conservación del planeta.</p>
+                        <a class="proyecto-link" href="educacion.html">Ver proyecto</a>
+                    </div>
+                </li>
+
+                <li class="proyecto">
+                    <button class="proyecto-toggle" aria-expanded="false">
+                        <div class="proyecto-header">
+                            <h3>Proyecto: Rescate de fauna</h3>
+                            <span class="arrow">+</span>
+                        </div>
+                        <p class="proyecto-resumen">Rescatamos animales heridos y los acompañamos hasta su rehabilitación o reubicación.</p>
+                    </button>
+                    <div class="proyecto-content" hidden>
+                        <p>Equipo de voluntarios y especialistas atiende emergencias de fauna, brindando primeros auxilios y cuidado hasta su recuperación.</p>
+                        <a class="proyecto-link" href="rescate.html">Ver proyecto</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section id="carrusel" class="carrusel-section full-screen-carrusel">
+            <div class="carrusel">
+                <div class="carrusel-title">
+                    <h2>Galería de proyectos</h2>
+                </div>
+                <button class="carrusel-control prev" type="button" aria-label="Slide anterior">‹</button>
+                <div class="carrusel-track">
+                    <div class="slide active" style="background-image:url('img/mediotortu.jpg')">
+                        <div class="slide-copy">
+                            <h3>Limpieza de playas</h3>
+                            <p>Jornadas comunitarias para mantener nuestras costas limpias y seguras.</p>
+                        </div>
+                    </div>
+                    <div class="slide" style="background-image:url('img/limpieza.jpg')">
+                        <div class="slide-copy">
+                            <h3>Educación ambiental</h3>
+                            <p>Charlas y talleres para escuelas, familias y comunidades locales.</p>
+                        </div>
+                    </div>
+                    <div class="slide" style="background-image:url('img/rescate.jpg')">
+                        <div class="slide-copy">
+                            <h3>Rescate de fauna</h3>
+                            <p>Atención y rehabilitación para animales heridos y en peligro.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carrusel-control next" type="button" aria-label="Siguiente slide">›</button>
+            </div>
+        </section>
+        <section id="ayudar" class="ayudar-section">
+            <h2><a href="ayudar.html">Cómo ayudar</a></h2>
+            <div class="ayudar-grid">
+                <article class="ayuda-card">
+                    <h3>Ser voluntario</h3>
+                    <p>Participá en jornadas, eventos y limpieza con nuestro equipo.</p>
+                </article>
+                <article class="ayuda-card">
+                    <h3>Donaciones</h3>
+                    <p>Contribuí con recursos, materiales o apoyo económico.</p>
+                </article>
+                <article class="ayuda-card">
+                    <h3>Aliado empresarial</h3>
+                    <p>Aportá como empresa con patrocinio, servicios o difusión.</p>
+                </article>
+                <article class="ayuda-card">
+                    <h3>Compartir</h3>
+                    <p>Difundí nuestras campañas en redes y con tu comunidad.</p>
+                </article>
+            </div>
+        </section>
+            <script src="script.js"></script>
+    </div>
+<footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-col contact">
+                <h4>Contacto</h4>
+                <p>Email: <a href="mailto:contacto@freeturtles.org">contacto@freeturtles.org</a></p>
+                <p>Teléfono: <a href="tel:+541123456789">+54 11 2345 6789</a></p>
+                <p>Dirección: Av de la Playa, 67</p>
+            </div>
+            <div class="footer-col links">
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="acerca.html">Acerca de</a></li>
+                    <li><a href="proyectos.html">Proyectos</a></li>
+                    <li><a href="ayudar.html">Ayudar</a></li>
+                    <li><a href="donar.html">Donar</a></li>
+                </ul>
+            </div>
+            <div class="footer-col social">
+                <h4>Redes</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook" class="social-btn">f</a>
+                    <a href="#" aria-label="Instagram" class="social-btn">ig</a>
+                    <a href="#" aria-label="Twitter" class="social-btn">t</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Free Turtles — Todos los derechos reservados. <a href="#">Política de privacidad</a></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+

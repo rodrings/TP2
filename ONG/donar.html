@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Turtles - Donar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <button class="nav-toggle" onclick="abrirMenu()" aria-label="Abrir menú">☰</button>
+        <img class="logo" src="img/logo.png" alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="acerca.html">Acerca de</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="ayudar.html">Ayudar</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="donar.html">Donar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenedor page-main">
+        <section class="about-section">
+            <h1>Doná un aporte </h1>
+            <p>Podés elegir un monto y simular tu apoyo a los proyectos de Free Turtles.</p>
+        </section>
+
+        <section class="about-section">
+            <form id="donacionForm" class="donacion-form">
+                <label for="monto">Monto a donar (ARS)</label>
+                <input id="monto" name="monto" type="number" min="100" step="1" placeholder="1000" required>
+                
+                <button class="hero-button" type="submit">Calcular impacto</button>
+            </form>
+            <div id="impactoResultado" class="impacto-resultado"></div>
+        </section>
+
+        <section class="about-section">
+            <h2>Otros modos de apoyar</h2>
+            <p>Si preferís, podés seguir ayudando con voluntariado, difusión o acercando insumos a nuestras actividades. Visitá la página de <a href="ayudar.html">Cómo ayudar</a> para ver todas las opciones.</p>
+        </section>
+    </main>
+
+   <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-col contact">
+                <h4>Contacto</h4>
+                <p>Email: <a href="mailto:contacto@freeturtles.org">contacto@freeturtles.org</a></p>
+                <p>Teléfono: <a href="tel:+541123456789">+54 11 2345 6789</a></p>
+                <p>Dirección: Av de la Playa, 67</p>
+            </div>
+            <div class="footer-col links">
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="acerca.html">Acerca de</a></li>
+                    <li><a href="proyectos.html">Proyectos</a></li>
+                    <li><a href="ayudar.html">Ayudar</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="donar.html">Donar</a></li>
+                </ul>
+            </div>
+            <div class="footer-col social">
+                <h4>Redes</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook" class="social-btn">f</a>
+                    <a href="#" aria-label="Instagram" class="social-btn">ig</a>
+                    <a href="#" aria-label="Twitter" class="social-btn">t</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Free Turtles — Todos los derechos reservados. <a href="#">Política de privacidad</a></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+

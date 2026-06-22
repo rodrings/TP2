@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Turtles - Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <button class="nav-toggle" onclick="abrirMenu()" aria-label="Abrir menú">☰</button>
+        <img class="logo" src="img/logo.png" alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="acerca.html">Acerca de</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="ayudar.html">Ayudar</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="donar.html">Donar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenedor page-main">
+        <section class="about-section">
+            <h1>Contacto</h1>
+            <p>Comunicate con nosotros para sumarte como voluntario, aclarar dudas sobre donaciones o coordinar apoyo a nuestros proyectos.</p>
+        </section>
+
+        <section class="about-grid">
+            <article class="about-card">
+                <h3>Correo</h3>
+                <p>contacto@freeturtles.org</p>
+            </article>
+            <article class="about-card">
+                <h3>Teléfono</h3>
+                <p>+54 11 2345 6789</p>
+            </article>
+            <article class="about-card">
+                <h3>Dirección</h3>
+                <p>Av de la Playa, 67</p>
+            </article>
+        </section>
+
+        <section class="about-section">
+            <h2>Formulario de contacto</h2>
+            <div class="donacion-form">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Contanos tu consulta..."></textarea>
+                <button class="hero-button" type="button">Enviar mensaje</button>
+            </div>
+        </section>
+    </main>
+
+       <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-col contact">
+                <h4>Contacto</h4>
+                <p>Email: <a href="mailto:contacto@freeturtles.org">contacto@freeturtles.org</a></p>
+                <p>Teléfono: <a href="tel:+541123456789">+54 11 2345 6789</a></p>
+                <p>Dirección: Av de la Playa, 67</p>
+            </div>
+            <div class="footer-col links">
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="acerca.html">Acerca de</a></li>
+                    <li><a href="proyectos.html">Proyectos</a></li>
+                    <li><a href="ayudar.html">Ayudar</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="donar.html">Donar</a></li>
+                </ul>
+            </div>
+            <div class="footer-col social">
+                <h4>Redes</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook" class="social-btn">f</a>
+                    <a href="#" aria-label="Instagram" class="social-btn">ig</a>
+                    <a href="#" aria-label="Twitter" class="social-btn">t</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Free Turtles — Todos los derechos reservados. <a href="#">Política de privacidad</a></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
